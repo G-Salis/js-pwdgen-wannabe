@@ -8,7 +8,8 @@ Infine scrivi sulla pagina nomecognomecolorepreferito21*/
 const firstname = prompt('Nome');
 const surname = prompt('Cognome');
 const color = prompt('Colore');
-let mypassword = firstname+surname+color+"21"
+const number = prompt('numero');
+const mypassword = firstname+surname+color+number;
 
 console.log(firstname);
 console.log(surname);
@@ -16,6 +17,6 @@ console.log(color);
 
 document.getElementById('stampa').innerHTML = 
 `
-Password: ${firstname}${surname}${color}21<br>
+Password: ${firstname}${surname}${color}${number}<br>
 Lunghezza password: ${mypassword.length}
 `;
